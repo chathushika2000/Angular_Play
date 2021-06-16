@@ -1,0 +1,20 @@
+
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Serve index page from public directory
+GET     /                           controllers.FrontendController.index()
+
+# An example route (Prefix all API routes with apiPrefix defined in application.conf)
+
+GET      /api/football/club         controllers.HomeController.FootballClub
+GET     /api/football/History       controllers.HomeController.FootballHistory
+GET     /api/football/GoalSort      controllers.HomeController.GoalSort
+GET     /api/football/WinSort       controllers.HomeController.WinSort
+GET     /api/football/Generate       controllers.HomeController.Generate
+# Serve static assets under public directory
+GET     /*file                      controllers.FrontendController.assetOrDefault(file)
+
+# Test post request
+
