@@ -1,0 +1,20 @@
+<body>
+  <button mat-stroked-button (click)="generate()">Add Match</button>
+  <button mat-stroked-button routerLink="/Matchplayed">Match History</button>
+  <button mat-stroked-button (click)="SortByGoal()">Sort by goalScore</button>
+  <button mat-stroked-button (click)="SortByWin()">Sort by Wins</button>
+
+  <div>
+    <table>
+          <tr>
+            <th *ngFor="let row of header">{{row}}</th>
+          </tr>
+
+          <tr *ngFor="let row of data">
+              <td *ngFor="let heading of header">
+                  {{row[heading]}}
+              </td>
+          </tr>
+    </table>
+  </div>
+</body>

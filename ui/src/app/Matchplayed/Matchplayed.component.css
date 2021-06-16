@@ -1,0 +1,50 @@
+h1{
+  margin-top:3%;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+table{
+  margin-top: 5%;
+  border-collapse: collapse;
+  width: 60%;
+  margin-left: 20%;
+
+}
+table td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+table Th{
+  border: 2px solid black;
+  border-collapse: collapse;
+  background-color: purple;
+  color: white;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+table tr:nth-child(odd) {
+  background-color: bisque;
+}
+table tr:nth-child(even) {
+  background-color: #e7d9b1;
+}
+button{
+  background-color: black;
+  color: #ffc800;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+form{
+  margin-left:20%;
+  margin-top: 3%;
+}
+form input{
+  height:25px;
+  width: 15%;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  background-color: #c8b9b9;
+}

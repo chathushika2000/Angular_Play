@@ -1,0 +1,19 @@
+<h1>Match History</h1>
+<form>
+  <input type="text" id="date" placeholder="Year-Month-Date"  >
+  <button mat-stroked-button (click)="search()" >Search</button>
+</form>
+
+<table>
+  <tr>
+    <th *ngFor="let row of header">{{row}}</th>
+  </tr>
+
+  <tr *ngFor="let row of data">
+    <td *ngFor="let heading of header">
+      {{row[heading]}}
+    </td>
+  </tr>
+
+</table>
+
